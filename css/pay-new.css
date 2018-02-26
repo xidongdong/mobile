@@ -1,0 +1,128 @@
+.topnavbar .text-right a.text{font-size: 15px;color: #0096ff;}
+h4{font-size: 14px;font-weight: bold;font-style: italic;}
+.list-group-mycard .list-group-item{margin-top: 5px}
+.list-group{margin-bottom: 0;}
+.money{font-size: 12px;color: #272636;text-align: center;margin-top: 12px}
+.tip_warn{font-size:14px;color: #555555;font-weight: bold;padding-left: 15px;margin-top: 180px}
+.tip_warn2{position:relative;width:100%;overflow:hidden;}
+.tip_warn2 em,.tip_warn em{font-size:14px;color: #555555;font-weight: bold;font-style:normal;}
+.tip_warn2 b{position:absolute;width:100%;height:1px;border-top:1px solid #7d7d7d;top:7px;}
+.contact{font-size: 12px;color: #555555;padding-left: 15px;clear:both;overflow:hidden;position:relative}
+.contact i{display: inline-block;width: 5px;height: 5px;background: #888888;border-radius: 50%;float: left;position: absolute;top:6px;}
+.contact span{float: left;margin-left: 10px;line-height: 18px;}
+.contact a{color: #0096ff}
+.error_int img{width:123px;height:92px;display:block;margin:0 auto;margin-top:143.5px}
+.error_int p{margin:0}
+.error_int p.text1{font-size:24px;color:#f26d4f;text-align:center;margin-top:30px;margin-bottom:20px}
+.error_int p.text2{font-size:14px;color:#272636;text-align:center}
+.change_btn{display:block;height:45px;background:#f26d4f;line-height:45px;color:#fff;font-size:18px;text-align:center;margin:0 23px;border-radius:5px;margin-top:18px;}
+.change_btn:focus,.change_btn:hover{color:#fff}
+.finish{background:#c9c9c9}
+.set_btn{color:#0096ff;font-size:15px;float:right;padding-right:40px;padding-top:26px;}
+.set_btn:focus,.set_btn:hover{color:#0096ff;}
+.tx_num{color:#272636;font-size:14px;margin:10px 0 25px 23px;}
+.tx_num i{font-weight:bold;color:#f26d4f;font-style:normal}
+.coin{margin:0 23px;position:relative;margin-bottom:10px}
+.coin input{height:44px;border:1px solid #dcdcdc;border-radius:3px;display:inline-block;width:100%;padding-left:15px}
+.coin span{position:absolute;right:9px;top:12px;}
+.coin span.get_yzm{color:#0096ff}
+.list_group{margin-top:0;margin:0 23px;}
+.list_group li{height:60px}
+.list_group li .row{padding:0}
+.add_bank{height:120px;border:2px dashed #b2b2b2;background:#fff;border-radius:5px;margin:0 23px;margin-top:17px}
+.add_bank p{text-align:center;font-size:14px;color:#b2b2b2}
+.add_bank img{width:34px;height:34px;display:block;margin:0 auto;}
+.add_bank a{display: block;width: 32px;height: 32px;margin: 0 auto;margin-top:29px;margin-bottom:12px}
+.tip_coin{color:#ff0000;font-size:12px;text-align:center;padding-top:13px}
+.agree_ment{font-size:12px;color:#555555;text-align:center;padding-top:12px;}
+.agree_ment a{color:#0096ff}
+.agree_ment a:focus,.agree_ment a:hover{color:#0096ff}
+.phone_num{font-size:14px;color:#555555;}
+.phone_num i{font-size:18px;font-weight:bold;color:#272636;font-style:normal}
+/* 可可 */
+.pay-reader a:focus{ color: #0096ff;}
+.pay-reader .btn-approve:focus{color: #fff;}
+.pay-card-num{font-size: 12px;}
+.form-normal .pay-text.pay-input-active{font-weight: bold;color:#272636;font-style: italic;}
+.btn-approve,.pay-reader .btn-approve{border-radius: 3px;background: #f26d4f;color:#fff;font-size: 18px;display: block;height: 44px;line-height: 44px;text-align: center;}
+.row .txt-info{height:44px;border:1px solid #dcdcdc;box-shadow:none;}
+.row-wrap-rtop{margin-top: 12px;}
+.warm-tips{position:relative;border-bottom:1px solid #7d7d7d;margin-top: 150px;}
+.warm-tips strong{position: absolute;top:-10px;left: 0;font-size:14px;color:#555;background: #f0f0f0;}
+.warm-info{padding:16px 0 0 16px;}
+.warm-info li{font-size: 12px;color:#555;margin-bottom: 5px;}
+.pay-warm-wrap{text-align: center;padding:18px 0 5px;}
+.pay-warm-wrap img{display: inline-block;width: 82px;height: 82px;margin-bottom: 20px;}
+.pay-warm-wrap p{font-size: 24px;color:#f26d4f;}
+.pay-infos-box{background: #fff;border-top:1px solid #d8d8d8;margin-bottom: 18px;}
+.pay-infos-box .pay-uname-infos{height: 47px;line-height: 47px;border-bottom:1px solid #d8d8d8;padding-left: 37px;margin:0;}
+.pay-infos-box .pay-uname-infos span{width: 20%;display: inline-block;color:#888;font-size: 14px;}
+.pay-infos-box .pay-uname-infos strong{color:#272636;font-size: 14px;font-weight: normal;}
+.pay-band-cardbtn{display: block;height: 46px;line-height: 46px;background: #f26d4f;color:#fff;text-align: center;border-radius:3px;font-size: 18px;}
+.pay-uname-infos b{display: inline-block;color:#f26d4f;border:1px solid #f26d4f;padding:0 12px;font-weight: normal;line-height: 18px;font-size: 12px;margin-left: 25px;}
+#pay-tips-shadow{display: none;position: absolute;top:188px;left:4%;width: 92%;height: 60px;line-height:60px;background: url(../images/pay2016-06-08/res-bg.png) repeat;border-radius: 5px;color:#fff;font-size: 14px;text-align: center; }
+.btn-active-approve{background: #c9c9c9;}
+.topnavbar .text-right a.pay-help,.pay-reader .pay-service,.app-card-warm dd a{color:#0096ff;}
+.form-normal .pay-label{font-weight: normal;text-align:right;padding: 12px 15px 12px 0;}
+.form-normal .pay-text{border-radius: 3px;border:1px solid #dcdcdc;box-shadow: none;color:#c0c0c0;font-size: 14px;}
+.app-next-approve{margin:0 10px;}
+.form-normal .pay-setbg{background: #fff;color:#272636;font-size: 14px;}
+.pay-reader{font-size: 12px;}
+.pay-reader p{margin:20px 0 10px;}
+.pay-group{margin-bottom: 8px;}
+.pay-warm-box{margin-top:30px;}
+.pay-warm-box strong{font-size: 14px;}
+.pay-warm-box ul{padding:14px 20px 0 5px;}
+.pay-warm-box li{font-size: 12px;color:#555;margin-bottom: 8px;list-style-type: none;}
+.pay-warm-box li i{display: inline-block;width: 5px;height: 5px;background: #888;border-radius:50%;margin-right: 5px;vertical-align: middle;}
+.pay-warm-box a{color:#0096ff;}
+.app-bank-wrap{display: none;background: #fff;border:1px solid #dcdcdc;border-top:0;padding:0 10px;border-radius: 0 0 3px 3px;position: relative;z-index: 1;top: -1px;}
+.app-bank-box{ border-top: 1px solid #dcdcdc; padding:12px 0;}
+.app-bank-box img{display: inline-block;width: 34px;height: 34px;}
+.app-icon-bank{padding:0;}
+.app-bank-info{padding-right: 0;}
+.app-bank-info .app-bank-name{font-size: 12px;color:#272636;}
+.app-bank-info .app-bank-xiane{font-size: 12px;color:#888;margin-top: 2px;}
+.app-bank-info .app-bank-name i{font-size: 14px;font-weight: bold;}
+.app-bank-cards{border:none;border-radius: 0;border-top:1px solid #dcdcdc;border-bottom:1px solid #dcdcdc;}
+.app-bank-cards .app-bank-box{border:none;}
+.app-xiane{text-align: center;font-size: 12px;color:#555;margin:12px 0 28px;}
+.pay-set-pwd{padding:0 15px;}
+.app-bank-cards .app-icon-bank{padding:0 10px;}
+.pay-warm-bank{padding:0 15px;margin-top: 126px;}
+.pay-warm-wrap .app-cz-mon{color:#272636;font-size: 14px;margin-top: 5px;}
+.pay-warm-wrap .app-cz-mon span{color:#f26d4f;margin:0 5px;}
+.pay-cz-success{display: block;margin-top: 18px;}
+.pay-cz-success a{border-radius: 2px;}
+.pay-cz-success .pay-later-btn{background: #fff;}
+.pay-cz-deal{margin-top: 25px;}
+.app-save-wrap{padding:0 24px;}
+.app-save-wrap .txt-info{ font-size: 12px; }
+.app-for-save{color:#555;font-size: 12px;}
+.app-mycard-wy{text-align: left;padding:0 5px;}
+.app-card-warm .app-card-tips{font-size: 14px;color:#555;margin:20px 0 19px;}
+.app-card-warm dl{color:#888;margin-bottom: 18px;}
+.app-card-warm dt{margin-bottom: 6px;}
+.app-card-warm dt,.app-card-warm dd{font-size: 12px;line-height: 18px;}
+.app-tixian-day{padding:0 35px;}
+/* 弹窗公共样式 */
+.pay-shadow-box{display: none;position: absolute;top:0;left: 0;width: 100%;height: 100%;background: #000;opacity: 0.6;z-index: 1031;}
+.pay-dialog-content{display: none;position: absolute;top:30%;left: 3%;width: 94%;background:#eeeeee;z-index: 1033;border-radius:5px;padding-bottom: 12px;}
+.pay-dialog-content .pay-tit,.pay-dialog-content .pay-cishu,.pay-dialog-content .pay-ikonw-box,.pay-dialog-content .pay-iknow-btn,.pay-dialog-content .pay-tit-h2,.pay-cz-success{text-align: center;}
+.pay-dialog-content .pay-cishu{color:#272636;margin:32px 0 33px;}
+.pay-dialog-content .pay-cishu font{color:#f26d4f;padding:0 4px;}
+.pay-dialog-content .pay-tit,.pay-dialog-content .pay-tit-h2{color:#ba0000;font-size: 14px;height: 38px;line-height: 38px;}
+.pay-dialog-content .pay-tit-h2{color:#272636;}
+.pay-dialog-content .pay-line{margin:0 3px;border-bottom:#b3b3b3;}
+.pay-iknow-btn,.pay-later-btn{display: inline-block;width: 200px;height: 34px;line-height: 34px;color: #fff;font-size: 15px;text-decoration: none;background: #f26d4f;border-radius:4px;}
+.pay-dialog-content .pay-yl-explain{margin:10px 0;padding:0 12px;font-size: 12px;line-height: 22px;}
+.pay-later-btn{width: 100px;background: none;color:#f26d4f;border:1px solid #f26d4f;margin-right: 8px;}
+.pay-once-btn{width: 100px;}
+.pay-later-btn:focus,.pay-later-btn:hover{color:#f26d4f;}
+/*iphone4*/
+@media screen and (max-width:320px){
+.tip_warn { margin-top: 115px;}
+.tip_warn2{margin-top:80px}
+.coin input{font-size:12px}
+.coin span{font-size:12px}
+}

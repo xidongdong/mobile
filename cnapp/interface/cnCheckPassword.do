@@ -1,0 +1,1 @@
+{"msg":"密码校验成功","resultData":null,"status":{"accountFlag":"1","appPwdPassFlag":"0","cardFlag":"1","hasAppPwdFlag":"1","hasPcPwdFlag":"0","loginFlag":"1","pcPwdPassFlag":"0","registerFlag":"1","whiteFlag":"1"},"voFlag":"0000"}

@@ -1,0 +1,294 @@
+var root="";
+var map={
+	"cntransfer":"cntransfer.do",//auth_key登陆
+	"login":"cnLoginAction.do",//用户名、密码登陆
+	"wellcome":"wellcome.data",
+	"getState":"cnInitial.do",//初始化状态
+	"register":"cnAuthorization.do",//授权
+	"checkpw":"cnCheckPassword.do",//校验app密码、pc密码，校验pc密码时需要传参数qdh=101
+	"setpw":"cnCreatePassword.do",// 设置app交易密码
+	"recharge":"cnRecharge.do",// 充值
+	"extraction":"cnInitialExtractionInfo.do",// 提现
+	"getMyBank":"getMyBank.do",// 当前用户的绑定银行
+ 	"preRecharge":"cnAppPreRecharge.do",//充值预处理
+ 	"openAccount":"cnAppOpenAccount.do",//身份认证开户
+ 	"transactionrecord":"cnTransactionRecord.do",//交易记录
+ 	"proceedsDetail":"cnProfitDetailed.do",//收益明细
+ 	"financingDetail":"cnColideList.do",//理财明细										
+ 	"toQyMyWallet":"toQyMyWallet.do",// 钱包信息
+ 	"bindBankCard":"cnAppBindBankCard.do"//请求CP绑卡页面
+ 	,"forsolBankCard":"forsolBankCard.do"//银行卡解绑
+ 	,"cnAppGetCheckCode":"cnAppGetCheckCode.do"//请求手机验证码
+ 	,"resetAppPwdNotWithCardCheck":"cnResetAppPwdNotWithCardCheck.do"//未绑卡重置交易密码
+ 	,"resetAppPwdWithCardCheck":"cnResetAppPwdWithCardCheck.do"//已绑卡重置交易密码
+ 	,"cnGetBindCardInfo":"cnGetBindCardInfo.do"//获取绑卡预填信息
+ 	,"cnHandleExtraction":"cnHandleExtraction.do"//提现
+ 	,"topay":"cntoPay.do"//橙牛消费时检查账号余额
+ 	,"pay":"cnpay.do"//橙牛消费时扣款
+ 	,"cnResetAppPwd":"cnResetAppPwd.do"//重置App交易密码
+ 	,"rechargeCheck":"cnRechargeCheck.do"//充值校验
+ 	,"cnprotocol":"cnprotocol.do"
+}
+
+var viewModle={//视图模板存储单元
+  "registerFlag":{
+    "id":"d_registFlag",
+    "title":"橙牛汽车钱包",
+    "content":function(){
+    	return register();
+     }	
+  },
+  "accountFlag":{
+    "id":"d_accountFlag",
+    "title":"身份认证",
+    "content":function(){
+  		return renderIDAuthentication();
+     }	
+  },
+  "renderBindCard":{
+    "id":"d_renderBindCard",
+    "title":"银行卡绑定",
+    "content":function(){
+  		return renderBindCard();
+     }	
+  },
+  "renderReplaceCard":{
+    "id":"d_renderBindCard",
+    "title":"银行卡绑定",
+    "content":function(){
+  		return renderReplaceCard();
+     }	
+  },
+  "loginFlag":{
+    "id":"d_loginFlag",
+    "title":"登录",
+    "content":function(){
+  		return loginFn();
+     }	
+  },
+  "whiteFlag":{
+    "id":"d_whiteFlag",
+    "title":"银行卡绑定",
+    "content":function(){
+  		return whiteRoster();
+     }	
+  },
+  "user":{
+    "id":"d_user",
+    "title":"我的汽车钱包",
+    "content":function(){
+    	
+    	return user();
+    }
+  },
+  "product":{
+	    "id":"d_product",
+	    "title":"项目介绍",
+	    "content":function(){
+	    		return productInfo();
+	     }	
+	  },
+  "qcqbfugz":{
+	    "id":"d_qcqbfugz",
+	    "title":"汽车钱包服务规则",
+	    "content":function(){
+	    	return qcqbfugz('2');
+	     }	
+	},
+  "hjsfwxy":{
+	    "id":"d_hjsfwxy",
+	    "title":"惠金所服务协议",
+	    "content":function(){
+	    	return hjsfwxy('1');
+	     }	
+	}
+	,
+  "qcqbfuxy":{
+	    "id":"d_qcqbfugz",
+	    "title":"汽车钱包服务协议",
+	    "content":function(){
+	    	return qcqbfuxy('3');
+	     }	
+	}
+	,
+  "rzzffwxy":{
+	    "id":"d_qcqbfugz",
+	    "title":"认证支付服务协议",
+	    "content":function(){
+	    	return rzzffwxy('4');
+	     }	
+	}
+    ,
+   "tzhtxy":{
+    	"id":"d_qcqbfugz",
+	    "title":"投资合同协议",
+	    "content":function(){
+	    	return tzhtxy('5');
+	     }	
+   }, 
+	"entryapppw":{
+		    "id":"d_entryapppw",
+		    "title":"请输入交易密码",
+		    "content":function(){
+		    			return entryapppw();
+		     }	
+	},
+	"setapppw":{
+	    "id":"d_setapppw",
+	    "title":"设置交易密码",
+	    "content":function(){
+	    			return f_setapppw();
+	     }	
+	},
+	"recharge":{
+	    "id":"d_recharge",
+	    "title":"充值",
+	    "content":function(){
+  			return f_recharge(window.localStorage.d_recharge_postData);
+	     }	
+	},
+	"extraction":{
+	    "id":"d_extraction",
+	    "title":"提现",
+	    "content":function(){
+  			return f_extraction();
+	     }	
+	},
+	"extractionsuccess":{
+	    "id":"d_extractionsuccess",
+	    "title":"提示",
+	    "content":function(){
+  			return f_extractionsuccess();
+	     }	
+	},
+	"doExtraction":{
+	    "id":"d_doExtraction",
+	    "title":"提现",
+	    "content":function(){
+  			return f_doExtraction();
+	     }	
+	},
+	"extractionapppw":{
+	    "id":"d_extractionapppw",
+	    "title":"请输入交易密码",
+	    "content":function(){
+  			return f_extractionapppw();
+	     }	
+	},
+	"rechargesuccess":{
+	    "id":"d_recharge_success",
+	    "title":"充值成功",
+	    "content":function(){
+	    			return f_rechargesuccess();
+	     }	
+	},
+	"rechargefail":{
+		"id":"d_recharge_fail",
+		"title":"充值失败",
+		"content":function(){
+			return f_rechargefail();
+		}
+	},
+	"linkfail":{
+		"id":"d_link_fail",
+		"title":"连接失败",
+		"content":function(){
+			return f_linkfail();
+		}
+	},
+	"timeoutView":{
+		"id":"timeoutView",
+		"title":"提示",
+		"content":function(){
+			return timeoutView();
+		}
+	},
+	"checkapppw":{
+		 "id":"d_entryapppw",
+		    "title":"请输入交易密码",
+		    "content":function(){
+		    			return checkapppw();
+		     }	
+	},
+	
+	"checkpcpw":{
+		 "id":"d_entryapppw",
+		    "title":"交易密码校验",
+		    "content":function(){
+		    	return checkpcpw();
+		     }	
+	},
+	"transactionrecord":{
+		 "id":"d_transactionrecord",
+		  "title":"交易记录",
+		  "content":function(){
+		   return transactionrecord();
+		  }	
+	},
+	"proceedsDetail":{
+		 "id":"d_proceedsDetail",
+    	 "title":"收益明细",
+		 "content":function(){
+		   return proceedsDetail();
+		}	
+	},
+	"financingDetail":{
+		 "id":"d_proceedsDetail",
+    	 "title":"理财明细",
+		 "content":function(){
+		   return financingDetail();
+		}	
+	},
+	"myBankCard":{
+		 "id":"d_myBankCard",
+    	 "title":"我的银行卡",
+		 "content":function(){
+		   return myBankCard();
+		}	
+	},"resetPassWord":{
+		"id":"d_resetPassWord",
+    	 "title":"重置交易密码",
+		 "content":function(){
+			 if(eval("("+localStorage.state+")").cardFlag=="1"){
+				 return resetPassWordHasCard();
+			 }else{
+				 return resetPassWordNotHasCard();
+			 }
+		}	
+	},"inputNewAppPwd":{
+		"id":"d_inputNewAppPwd",
+    	 "title":"输入新的交易密码",
+		 "content":function(){
+			 return f_resetApppw();
+		}	
+	},
+	"selectBank":{
+		"id":"d_selectBank",
+    	 "title":"选择开户行",
+		 "content":function(){
+			return renderSelectBank();
+		}	
+	},
+	"inPWForCnConsume":{
+		"id":"d_selectBank",
+    	 "title":"输入惠金所交易密码",
+		 "content":function(){
+			return inPWForCnConsume();
+		}	
+	},
+	"loginOutPage":{
+		"id":"test",
+		"title":"登录信息失效",
+		"content":function(){
+			return loginOutPage();
+		}	
+	},
+	"errorPage":{
+		"id":"test",
+		"title":"错误提示",
+		"content":function(){
+			return errorPage();
+		}	
+	}
+		
+}

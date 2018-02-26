@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>理财</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="../css/ratchet.min.css" />
+  <link rel="stylesheet" href="../css/hfaxCow.css" />
+  <script src="../js/demo.js"></script>
+</head>
+<body>
+  <a class="icon icon-left-nav pull-left" id="back"></a>
+  <div class="main">
+    <header class="bar bar-nav"><h1 class="title">提现</h1></header>
+    <div class="content">
+      <div class="pdAll">
+        <div class="extractBody">
+          <div class="extractSurvey">
+            <p>总资产：<strong>24,000.00</strong></p>
+            <p>体现处理中：<strong>4,000.00</strong></p>
+            <p>投资分配中：<strong>4,000.00</strong></p>
+          </div>
+          <div class="checkList">
+            <h2><span>转账日期</span><i>资金类型</i><strong>金额(元)</strong><b>选择</b></h2>
+            <ul>
+              <li><span>2015-12-28</span><i>未投资</i><strong>2,000.00</strong></li>
+              <li><span>2015-12-28</span><i>未投资</i><strong>2,000.00</strong></li>
+              <li class="wait"><span>2015-12-28</span><i>未投资</i><strong>2,000.00</strong></li>
+            </ul>
+          </div>
+          <div class="jieshao">
+            <strong>提现规则</strong>
+            1. 转账日期是申请提现后系统处理转账的日期。<br />
+            2. 未投资金额次日可进行转账；已投资金额待产品到期后进行转账。<br />
+            3. 系统转账后预计3个工作日银行可到账。
+          </div>
+          <div class="extractCard">
+            <img src="../images/bankico_0102.png" alt="">
+            <span>招商银行 **** **** **** 5186</span>
+          </div>
+          <div class="btn btn-block btn-orange">提交</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  var oLi=document.querySelectorAll('.checkList li');
+  for (var i = 0; i < oLi.length; i++) {
+    if(oLi[i].className!='wait'){
+      oLi[i].addEventListener('touchend',function(){
+        this.className=this.className=='checked'?'':'checked';
+      })
+    }
+  };
+  </script>
+</body>
+</html>

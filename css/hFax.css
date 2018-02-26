@@ -1,0 +1,255 @@
+﻿html,body{ background: #f1f1f1;}
+/*body.hFaxBody{position: static!important;}
+.content.hFaxContent{position: static!important;}*/
+h1,h2,h3,h4,h5,h6{color:#333;}
+ul{margin: 0;padding: 0;overflow: hidden;}
+li{list-style: none;}
+td{height: 50px;}
+.hFaxContent .content-padded img{width: 100%;}
+.bar {background: #0061c8; border: none;}
+.title{ color: #fff;}
+.bar .icon{ color: #fff;}
+.content{background: none;padding-bottom:44px;}
+
+.segmented-control{font-size: 14px; margin-bottom: 10px; background-color:#c4c4c4;border: none;}
+.segmented-control .control-item.active{ background-color: #adbdcd;border-bottom: 2px solid #005bc0; color: #005bc0;}
+.segmented-control .control-item{padding:15px 0;  border-bottom: 2px solid #ababab;  }
+.noPadList.card{margin:0;border: none; background: #f1f1f1;}
+/*�б�ҳ*/
+.DQli .media{padding: 11px 0px 11px 15px}
+.DQli ul{padding-top: 8px;}
+.DQli h4{font-weight: 500; font-size: 15px!important; overflow: hidden; height: 22px;}
+.DQli h4 strong{ float: left; font-weight: 500; width: 80%; text-overflow:ellipsis;white-space: nowrap; overflow: hidden;}
+.DQli h4 span{display: inline-block;margin-right:10px;border-radius:4px; font-size: 12px;font-weight: 100; padding:3px 5px;  
+	vertical-align:middle; float: right;}
+.muzi{border:1px solid #ff9500;color:#ff9500;}
+.suoding{border:1px solid #ff3b30;color:#ff3b30;}
+
+.DQli h6{margin-top: 0; color: #747474;font-weight: 100;}
+.DQli ul li:last-child{text-align: center;}
+.DQli ul li span{display: block; font-size: 12px;color: #757575;}
+.DQli ul li strong{ color: #0061c8; font-size: 20px; font-weight: 300;}
+.DQli ul li i{font-size: 12px; font-style: normal; font-weight: 300;margin: 0 3px;}
+
+
+.column3 ul li{float: left; width: 40%;line-height: 1.3em;}
+.column4 ul li{float: left; width: 27%;line-height: 1.3em;}
+.column3 ul li:last-child{width: 20%;}
+.column4 ul li:last-child{width: 10%;}
+
+.gouBox{padding:10px 0;background: #fff;margin-bottom: 10px;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.gouBox ul li{float: left;width: 45%;padding-left: 5%;line-height: 1.6em; text-align: center;}
+.gouBox ul li:first-child{ border-right: 1px solid #ddd;}
+.gouBox ul li span{display: block; color: #535353;font-size: 14px;}
+.gouBox ul li strong{color: #0061c8; font-size: 20px;}
+
+.btnBlock{bottom: 0; background:#0061c8; color: #fff; text-align: center;line-height: 44px;}
+.detailsTop{ background: #0061c8; padding: 20px 0 40px 0;}
+.detailsTop ul{overflow: hidden;}
+.detailsTop ul li{ width: 50%; float: left;color: #fff;font-weight: 300;}
+.detailsTop strong{display: block;text-align: center; font-size: 45px;height: 1.5em;line-height: 1.5em; padding-bottom: 6px;}
+.detailsTop strong em{ font-size: 24px;margin: 0 3px; font-style: normal; vertical-align:middle;display: inline-block;}
+.detailsTop span{display: block; text-align: center;font-size: 14px;}
+/*����ҳ���*/
+.detailsAmount{padding: 10px 15px 20px 15px;background: #fff;}
+.detailsAmount li{float: left;width: 50%;line-height: 1.5em; font-size: 14px; }
+.detailsAmount li.speedRight{text-align: right}
+.detailsAmount li span{color: #666;}
+.detailsAmount li strong{color: #0061c8;font-weight: 500;margin: 0 3px;}
+.detailsAmount li strong em{ font-style: normal; }
+/*������*/
+.detailsSpeed{ background: #fff; padding: 10px 15px 0 15px; overflow: hidden;}
+.detailsSpeed strong{display: block; height: 8px; background: #d7d7d7; border-radius:4px;margin-top: 6px;overflow: hidden;}
+.detailsSpeed strong i{display: block; float: left; background: #0061c8; width: 0%;height:100%;}
+.detailsSpeed span{ display: block; text-align: center;font-size: 14px; color: #666; padding: 10px 0}
+.detailsSpeed span b{ color: #0061c8; font-size: 24px; font-weight: 400;margin: 0 4px;}
+.detailsSpeed span b em{ font-size: 14px; font-style: normal; font-weight: 500;}
+/*����Ϣ����*/
+.interestTop{ background:#0061c8;padding:0 0 30px 0;  text-align: center; color: #fff; }
+.interestTop span{display: block; height:3em;line-height:3em;font-size: 14px;}
+.interestTop strong{display: block; font-size: 45px; height: 1.5em; line-height: 1.5em;}
+.interestList{margin-bottom: 10px; background: #fff; border-top: 1px solid #ddd;}
+.interestList li{float: left; position:relative; width: 50%; border-left:1px solid #ddd; border-bottom:1px solid #ddd;padding:6px 0 6px 40px; font-size: 14px;line-height: 1.5em; }
+.interestList li:before{ position: absolute; width: 16px; height: 16px;background-size: 100% 100%;content:' '; top: 8px; left: 15px;}
+.detailsIcon1:before{ background: url(../images/insertIcon1.svg); }
+.detailsIcon2:before{ background: url(../images/insertIcon2.svg); }
+.detailsIcon3:before{ background: url(../images/insertIcon3.svg); }
+.interestList li span{ display: block;}
+.interestList li strong{ font-weight: 300; color: red;}
+.interestList li b{font-weight: 300; color:#0061c8;}
+.interestList li em{line-height: 3em;color:#0061c8; font-style: normal;}
+.table-view-cell{ padding:13px 65px 13px 15px;}
+.no-right.table-view-cell{ padding-right:15px;}
+.no-right span{float: left;}
+.no-right strong{font-weight: 500; color: #0061c8;float: right;}
+/*����ҳ����ϸ��Ϣ*/
+.hFaxCard{padding:11px;}
+.hFaxCard h4{ text-align: center; line-height:1.5em;padding:10px; font-weight:500;}
+.hFaxCard h4 span{ display: block; text-align: center; font-size: 14px; }
+.hFaxCard h5{font-size: 14px; font-weight: 700;}
+.hFaxCard table{ border-top:1px solid #ddd;border-left:1px solid #ddd; width: 100%; font-size: 12px;}
+.hFaxCard table td{border-right:1px solid #ddd;border-bottom:1px solid #ddd; padding:6px;}
+.whiteBack{ background: #fff;}
+.surveyBox{padding-bottom: 10px;}
+.surveyBox h4{border: 1px solid #ddd; line-height: 2em;padding:0 11px; font-weight: 500;
+background: -webkit-linear-gradient(#fff, #e5e5e5); /* Safari 5.1 - 6.0 */
+background: -o-linear-gradient(#fff, #e5e5e5); /* Opera 11.1 - 12.0 */
+background: -moz-linear-gradient(#fff, #e5e5e5); /* Firefox 3.6 - 15 */
+background: linear-gradient(#fff, #e5e5e5);}
+.surveyBox p{padding:0 11px;}
+
+/*undefined*/
+.undefined{padding-top:50%; text-align: center;}
+
+/*pop*/
+.popover:before{ content:normal;}
+.popover .bar-nav{border-radius: 6px 6px 0 0;}
+
+/*login*/
+.shen-group.input-group{background:#f1f1f1;padding-top:10px;}
+.shen-group .input-row {margin-bottom: 10px; background:#fff;border-top: 1px solid #ddd;}
+.shen-group .input-row:before{position: absolute;width:20px;height:20px;top:17px;right:10px;content:'\e818';font-weight:700;color:#999;
+ font-family: Ratchicons;background-color: #fff;font-size: 18px;text-align: center;}
+.shen-group .input-row select{margin: 0;padding:5px 10px; background:#fff;box-shadow:inset 0px 0px 0px #fff; border: none; font-size: 16px;}
+.input-row label{width: 30%; font-size: 16px;}
+.input-row input{width: 70%; font-size: 14px;float:left;}
+
+.infoTishi{margin: 10px; color: #757575;font-size: 12px;}
+.infoTishi:before{ font-family: Ratchicons;font-size: 20px; display: inline-block; color: #0061c8; vertical-align:middle;}
+.icon-check{margin:10px; color: #333;font-size: 14px; text-align: center;}
+.icon-check:before{ font-family: Ratchicons;font-size: 16px;margin-right: 8px; display: inline-block; color: #fff;background:#0061c8; 
+	width: 21px; height: 21px; border-radius:50%; text-align: center; line-height: 22px; font-weight: 100;}
+.btn-block{width: 90%; border-radius:24px; margin: 0 auto;}
+.btn{font-size: 14px; padding:6px 10px}
+.btn-primary{ background:#0061c8; /*position: fixed;*/}
+
+.login .input-group{margin-bottom: 20px;}
+.logo{padding:20px 0;}
+.logo strong{display:block;position:relative;width: 200px;height: 100px; background: url(../images/logo.svg);background-size: 100% 100%;margin: 0 auto; }
+.btnConfirm{padding: 10px; margin-bottom: 20px;}
+.linkTo{ text-align: center; font-size: 16px;}
+@media screen and(min-width: 480px){
+	.hFaxContent{ width: 480px;margin: 0 auto;min-height: 1000px;}
+}
+
+/**/
+.password{ margin: 0 auto; position: relative;  overflow: hidden;width: 262px;}
+.password ul{border: 1px solid #ccc; border-left: none;height:40px;width: 260px;}
+.password li{float: left;height: 40px;line-height:40px; text-align: center; border-left: 1px solid #ccc; width: 43px; background: #fff;}
+.password input{position: absolute;width: 100%; height: 100%; z-index: 1; top: 0; left: 0; background: none; border: none;
+	letter-spacing:34px;padding:0 0 0 15px;}
+
+/*password*/
+.passWord{height:100%;overflow: hidden;}
+#text{position: absolute; left: 0;bottom: -200px;width: 100%; height:200px; background: #fff;opacity: 0; }
+#text ul{overflow: hidden;position: }
+#text li{display:table;float: left; width: 33.333%;height:45px;line-height: 50px; text-align: center; font-size: 24px; color: #666; 
+	border-top: 1px solid #ddd;border-left: 1px solid #ddd;}
+#keyBox{position: relative;height: 153px;}
+.Trade{padding-top:20px;}
+.Trade h4{padding: 20px; text-align: center;}
+.prompt{background: #fff; padding: 20px 0; text-align: center;}
+.prompt:before{ font-family: Ratchicons;font-size: 50px;display:block; color: #fff;background:#0061c8; text-align: center;content: '\e810';
+	width: 60px; height: 60px; border-radius:50%; text-align: center; line-height: 60px; font-weight: 100; margin: 0 auto;margin-bottom: 10px; }
+.prompt strong{color: #0061c8; font-size: 18px; line-height: 1.3em; display: block; font-weight: 500;}
+.prompt span{color: #999; font-size: 14px; line-height: 1.3em; display: block;}
+.prompt em{ font-style: normal; font-size: 30px; font-weight: 500; display: block; padding: 15px 0;}
+.prompt em i{ font-style: normal; font-size: 15px;}
+.selectBtn{margin:20px 0;}
+.selectBtn .table-view-cell{font-size: 16px;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;background: #fff;padding:10px 65px 10px 15px;}
+.selectBtn .table-view-cell a{margin: -10px -65px -10px -15px}
+.selectBtn .table-view-cell a b{font-weight: 500;}
+.selectBtn .table-view-cell a img{ width: 24px; height: 24px; float: left; margin:10px 10px 0 0;}
+.selectBtn .table-view-cell a strong{ float: left; width: 80%;line-height: 1.5em; font-size: 14px; font-weight: 300;}
+.selectBtn .table-view-cell a span{ display: block; font-size: 16px; line-height: 1.5em;}
+
+.card.popover{top:auto; bottom: 0; left: 0; width: 100%;margin: 0;border-radius: 0;}
+.card.popover .bar{background: #fff;border-radius: 0;margin: 0 10px; padding: 0;}
+.card.popover h1{color: #333;}
+.card.popover a{ color: #1a87fe; font-size: 16px;padding:12px 5px;}
+.popover p{padding:60px 20px 20px 20px; font-size: 14px; line-height: 1.5em;}
+#bank {overflow-x: hidden;padding: 44px 10px 0 10px; height: 350px;}
+#bank.bankList{ padding:0 10px; background: #fff; height: auto;}
+#bank li{border-top: 1px solid #ddd; overflow: hidden;padding:10px 0; position: relative;}
+#bank li:first-child{border: none;}
+#bank li img{ width: 24px; height: 24px; float: left; margin:10px 10px 0 0;}
+#bank li strong{ float: left; width: 80%;line-height: 1.5em; font-size: 14px; font-weight: 300;color:#565656;}
+#bank li span{ display: block; font-size: 16px; line-height: 1.5em;}
+#bank li:before{display:none;position: absolute; top: 20px;right: 0; content:'\e810';font-size: 24px; color:#1a87fe; font-family: Ratchicons; }
+#bank li.checked:before{display: block;}
+#bank.check li span{line-height: 2.5em; color:#232323;}
+
+/*navigate-right*/
+.input-group .table-view{border:none;margin: 0;}
+.input-group a.navigate-right{margin:-10px 0 -10px 0;}
+.input-group .table-view-cell a img{margin: 0 15px 0 15px;}
+.input-group .selectBtn{margin: 0;}
+.input-group .selectBtn .table-view-cell{border-top: none;}
+.input-group .table-view-cell{padding:10px 0 10px 0;font-size: 16px;}
+.navigate-right{overflow: hidden;}
+.navigate-right label{float: left;width: 30%;padding:0 15px;}
+
+.btn-list-right{ width: 30px; height: 30px;display: inline-block;}
+.btn-list-right:before{display: block;content:'\e818';font-family: Ratchicons; color: #757575;}
+.notBound{ background: url(../images/notFind.svg) no-repeat center center; background-size: 120px 120px;}
+/*error*/
+.errorBox{ padding-top: 70%; text-align: center;background: url(../images/get404.png) no-repeat center center; background-size: 150px 150px;color:#666;}
+/*dealpassword*/
+.dealBox{padding:10px; font-size: 14px;}
+.dealPassBox{margin:0 0 20px 0;}
+.cardList{ background: #fff; margin-top:15px; }
+.cardList #bank{height:auto; margin: 0;padding: 0 10px;}
+
+.loading{position:fixed;top:0;left: 0;width: 100%;height: 100%; z-index: 111;}
+.mubu{width: 100%;height: 100%;background: url(../images/mubu.png);}
+.loadBox{position:absolute; top:50%; left: 50%; width: 280px; height:70px;margin-left: -140px; margin-top:-35px;padding-top:12px;
+	background: #fff;padding-left: 50px; border-radius:6px; animation: loading 1s;}
+.loadBox img{ float: left; margin-right:10px;}
+.loadBox span{float: left; font-size: 24px;padding-top:18px;}
+/*error animite*/
+.error{ font-size:12px;margin: 30px auto 0 auto; padding:10px;width: 260px; line-height: 1.8em; border-radius: 5px;
+	border: 1px solid red;box-shadow:0px 0px 8px #cc9696;animation: loading 2s}
+
+@keyframes error{
+	0%{box-shadow:0px 0px 8px #cc9696;}
+	25%{box-shadow:0px 0px 1px #ffffff;}
+	50%{box-shadow:0px 0px 8px #cc9696;}
+	75%{box-shadow:0px 0px 1px #ffffff;}
+	100%{box-shadow:0px 0px 8px #cc9696;}
+
+}
+@keyframes loading{
+	0% {opacity:0;}
+	30% {opacity:0;}
+	31%{opacity: 0.5;}
+	100% {opacity:1;}
+}
+
+/*for alertPop by shaonan at 2015-12-22*/
+.alert{ position: fixed;top: 0;width: 100%; height: 100%; z-index: 1000;}
+.alertBox.hide{animation: alertOut 0.8s;}
+.mubu{width: 100%; height: 100%; background: #000; opacity: 0.5;animation: mubuIn 0.8s;}
+.mubu.hide{animation: mubuOut 0.8s;}
+.alertBox{position: absolute; top:15%; left: 50%; margin-left: -130px; width: 260px; background: #eee; border-radius: 6px;
+	padding-bottom: 20px;animation: alertIn 0.8s;}
+.alertBox h2{ margin: 0 10px; text-align: center; font-size: 14px; font-weight:500; padding: 20px 0; border-bottom: 1px solid #c5c5c5; color: #272727;}
+.alertBox p{ padding: 10px 20px;line-height: 2em;text-align: center;}
+.alertBox b{width: 40%; text-align: center; padding: 8px 0; font-size: 14px; font-weight: 500; color: #fff; background: #4F7AF2;
+ display: block; margin: 0 auto;}
+
+@keyframes alertIn{0% {opacity:0;top: -40%}100% {opacity:1; top:15%;}}
+@keyframes mubuIn{0% {opacity:0;}100% {opacity:0.5;}}
+@keyframes alertOut{0% {opacity:1; top:15%;}99% {opacity:0;top: -40%}100%{display: none;}}
+@keyframes mubuOut{0% {opacity:0.5;}99% {opacity:0;}100%{display: none;}}
+
+
+
+
+
+
+
+
+
+
+
+

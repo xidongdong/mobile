@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>项目详情</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  	<link href="../css/bootstrap.reset.css" rel="stylesheet">
+  	<link href="../css/bootstrap.theme.css" rel="stylesheet">
+    <link href="../css/hjc_new.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+	  <div class="navbar-fixed-top topnavbar">
+  		<div class="col-xs-3 text-left">
+  		  <a class="iconfont icon-back" href="#"></a>
+  		</div>
+  		<div class="col-xs-6 text-center">
+  		  项目详情
+  		</div>
+  		<div class="col-xs-3 text-right">
+  		</div>
+	  </div>
+	  <div class="row list-group list-group-noradius hjc-item">
+      <a href="#" class="list-group-item"><span>项目概况</span><span class="iconfont icon-go hjc-icon"></span></a>
+      <a href="#" class="list-group-item"><span>投资说明书</span><span class="iconfont icon-go hjc-icon"></span></a>
+      <a href="#" class="list-group-item" id="hjc-tips-book"><span>风险提示书</span><span class="iconfont icon-go hjc-icon"></span></a>
+      <a href="#" class="list-group-item"><span>投资管理合同</span><span class="iconfont icon-go hjc-icon"></span></a>
+	  </div>
+	</div>
+  <div class="hjc-mask" id="hjc-mask"></div>
+  <div class="hjc-dialog-box" id="hjc-dialog-box">
+    <div class="hjc-close-box">
+      <span id="hjc-close-btn"><img src="../images/hjc2016-04-22/iconfont-guanbi.png" alt=""></span>
+      <i></i>
+    </div>
+    <h2 class="hjc-title">风险提示书</h2>
+    <div class="hjc-risk-item">
+      <strong>一、 政策风险</strong>
+      <p>因国家法律、法规、行政规章或政策发生重大调整、变化或其他不可预知的意外事件， 可能导致本定向委托投资的有效性发生变化，从而可能导致委托人无法实现预期收益乃至本金遭受损失。 </p>
+    </div>
+    <div class="hjc-risk-item">
+      <strong>二、 行业风险</strong>
+      <p>定向委托投资标的对应金融产品份额投向所处的行业可能会受经济运行周期性变化，以及所处行业的成熟 阶段、上下游供求关系、 内部竞争程度、替代品威胁等因素的负面影响，从而发生不利于委托人实现预期收益的变化乃至本金遭受损失。</p>
+    </div>
+    <div class="hjc-risk-item">
+      <strong>三、 市场风险</strong>
+      <p>资金市场供求关系的变化、货币政策、财政政策、行业政策等因素的变化，以及整体经济形势的变化， 可能会对利率、汇率、资金成本和商品价格等因素产生负面影响，从而不利于委托人实现预期收益乃至本金遭受损失。</p>
+    </div>
+    <div class="hjc-risk-item">
+      <strong>四、 管理风险</strong>
+      <p>资金市场供求关系的变化、货币政策、财政政策、行业政策等因素的变化，以及整体经济形势的变化， 可能会对利率、汇率、资金成本和商品价格等因素产生负面影响，从而不利于委托人实现预期收益乃至本金遭受损失。</p>
+    </div>
+    <div class="hjc-risk-item">
+      <strong>五、 信用风险</strong>
+      <p>无论何种原因，当最终对定向委托投资标的对应金融产品份额承担偿还责任的融资方不能按时偿付本金和收益，将导致委托人无法实现预期收益，甚至本金遭受损失。</p>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var oMask = document.getElementById('hjc-mask');
+    var oDialog = document.getElementById('hjc-dialog-box');
+    var oTips = document.getElementById('hjc-tips-book');
+    var oClose = document.getElementById('hjc-close-btn');
+    
+    oTips.onclick = function(){
+      oMask.style.display = 'block';
+      oDialog.style.display = 'block';
+    }
+
+    oClose.onclick = function(){
+      oMask.style.display = 'none';
+      oDialog.style.display = 'none';
+    }
+  </script>
+  </body>
+</html>

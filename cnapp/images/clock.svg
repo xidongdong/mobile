@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="327" height="300" viewBox="0 0 327 300">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="458" y="408" width="327" height="300" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="458" y="408" width="327" height="300" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzI3IiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDMyNyAzMDAiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iMTYzLjUiIHkxPSIzMDAiIHgyPSIxNjMuNSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNmZjVlM2EiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZmY5NTAwIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCBjbGFzcz0iY2xzLTEiIHdpZHRoPSIzMjciIGhlaWdodD0iMzAwIi8+Cjwvc3ZnPgo="/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path id="clock" class="cls-1" d="M773.54,503.244l0.283,0.283-4.517,4.519-0.03.031h0l-2.479,2.48-84.321-84.335,7.027-7.03,0.289,0.289c22.17-17.372,55.357-14.908,77.005,6.741S790.913,481.069,773.54,503.244Zm-13.708-70.069c-18.575-18.491-43.616-20.689-63.24-6.892l70.178,70.19C780.887,477.121,778.485,451.745,759.832,433.175Zm-4.984,137.719a132.144,132.144,0,0,1-37.815,92.668l36.04,35.9L744.5,708l-36.314-36.171a133.709,133.709,0,0,1-170.058,2.735L504.561,708l-8.572-8.538L529,666.575a132.219,132.219,0,0,1-40.851-95.681c0-73.369,59.7-132.838,133.347-132.838S754.848,497.525,754.848,570.894ZM621.5,450.133c-66.951,0-121.225,54.071-121.225,120.761S554.549,691.66,621.5,691.66s121.225-54.071,121.225-120.766S688.451,450.133,621.5,450.133ZM560.888,595.042V582.975H621.5V486.358h12.123V595.042H560.888Zm-87.162-86.966h0l-0.035-.037-4.512-4.513,0.283-.283c-17.373-22.175-14.905-55.367,6.744-77.022s54.835-24.113,77.005-6.741l0.288-.289,7.027,7.03-84.32,84.335Zm9.443-74.9c-18.653,18.57-21.056,43.946-6.938,63.3l70.178-70.19C526.785,412.486,501.744,414.683,483.169,433.175Z" transform="translate(-458 -408)"/>
+</svg>

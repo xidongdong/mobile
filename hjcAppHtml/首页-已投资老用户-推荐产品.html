@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height:100%;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>首页-已投资老用户-推荐产品</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+  	<link href="../css/bootstrap.reset.css" rel="stylesheet">
+  	<link href="../css/bootstrap.theme.css" rel="stylesheet">
+    <link href="../css/hjc_new.css" rel="stylesheet">
+    <script src="../js/jquery.min.js?v=1.11.3"></script>
+    <script src="../js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container hjc-container">
+    	<div class="navbar-fixed-top">
+			  <div class="topnavbar-red">
+					<div class="col-xs-3 text-left">
+					  <a class="iconfont icon-profile" href="#"></a>
+					</div>
+					<div class="col-xs-6 text-center"><img src="../images/hfaxLogo.png" alt="" id="logo"></div>
+					<div class="col-xs-3 text-right">
+				  	<a class="iconfont icon-message" href="#"></a>
+					</div>
+			  </div>
+			  <div class="list-group-financial-top setmargin">
+			  	<h2 class="text-center total-invest-text">2,600,000.00</h2>
+			  	<h2 class="text-center star"><img src="../images/big-star.png" alt=""></h2>
+					<h5 class="text-center">投资总额(元)<span id="eye-btn"></span></h5></a>
+					<div class="row">
+					  <div class="col-xs-6 text-left">
+					  	<h5 class="eye-star"><img src="../images/s-star.jpg" alt=""></h5>
+					  	<h5 class="total-invest-text">23,139.93</h5>
+					  	<h5>预期收益(元)</h5>
+					  </div>
+					  <div class="col-xs-6 text-right">
+					  <h5 class="eye-star"><img src="../images/s-star.jpg" alt=""></h5>
+					  <h5 class="total-invest-text">23,139.93</h5><h5>余额(元)</h5>
+					  </div>
+					</div>
+			  </div>
+			  <div class="row bgcolor">
+					<div class="col-xs-6 text-center tab_selected">推荐产品</div>
+					<div class="col-xs-6 text-center tab_unselected">已购买产品</div>
+			  </div>
+			</div>
+	  <!-- 外层变动 -->
+	  <ul class="gList hjc-gList">
+	  	<!-- 循环开始 -->
+	  	<li>
+	  		<h4>惠理财-阳光收益增强Z151231001</h4>
+	  		<div class="gRate">
+	  			<p><strong>7.9</strong>% +0.5%</p>
+	  		</div>
+	  		<div class="gInvest">
+	  			<span>165天期限</span>
+	  			<strong class="hjc-vote">1千元起投</strong>
+	  		</div>
+	  		<div class="gBtn">
+	  			<i class="disabling">已满标</i>
+	  		</div>
+	  	</li> 
+	  	<li>
+	  		<h4>惠理财-阳光收益增强Z151231001</h4>
+	  		<div class="gRate">
+	  			<p><strong>7.9</strong>% +0.5%</p>
+	  		</div>
+	  		<div class="gInvest">
+	  			<span>114天期限</span>
+	  			<strong class="hjc-vote">1千元起投</strong>
+	  		</div>
+	  		<div class="gBtn">
+	  			<i>抢购</i>
+	  		</div>
+	  	</li> 
+	  	<li>
+	  		<h4>惠理财-阳光收益增强Z151231001</h4>
+	  		<div class="gRate">
+	  			<p><strong>7.9</strong>% +0.5%</p>
+	  		</div>
+	  		<div class="gInvest">
+	  			<span>58天期限</span>
+	  			<strong class="hjc-vote">1万元起投</strong>
+	  		</div>
+	  		<div class="gBtn">
+	  			<i>抢购</i>
+	  		</div>
+	  	</li> 
+	  	<li>
+	  		<h4>惠理财-阳光收益增强Z151231001</h4>
+	  		<div class="gRate">
+	  			<p><strong>7.9</strong>% +0.5%</p>
+	  		</div>
+	  		<div class="gInvest">
+	  			<span>258天期限</span>
+	  			<strong class="hjc-vote">5万元起投</strong>
+	  		</div>
+	  		<div class="gBtn">
+	  			<i>抢购</i>
+	  		</div>
+	  	</li>
+	  	<li>
+	  		<h4>惠理财-阳光收益增强Z151231001</h4>
+	  		<div class="gRate">
+	  			<p><strong>7.9</strong>% +0.5%</p>
+	  		</div>
+	  		<div class="gInvest">
+	  			<span>165天期限</span>
+	  			<strong class="hjc-vote">1千元起投</strong>
+	  		</div>
+	  		<div class="gBtn">
+	  			<i>抢购</i>
+	  		</div>
+	  	</li>
+	  	<!-- 循环结束 -->
+	  </ul>
+	  <!-- 修改结束 -->
+	  <p class="text-center"><a href="#">更多理财产品</a></p>
+    <div class="navbar-fixed-bottom">
+      <a href="javascript:;" class="hjc-homepage"></a>
+      <a href="javascript:;" class="hjc-purse active"></a>
+      <a href="javascript:;" class="hjc-wish"></a>
+    </div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#eye-btn").click(function(){
+				if($(".star").css("display") == "none"){
+					$(".total-invest-text").css("display","none");
+					$(".star , .eye-star").css("display","block");
+					$(this).css({"backgroundImage":"url(../images/iconfont-eye-hide.png)"});
+				}else{
+					$(".total-invest-text").css("display","block");
+					$(".star , .eye-star").css("display","none");
+					$(this).css({"backgroundImage":"url(../images/eyes.png)"});
+				}
+			})
+		})
+	</script>
+  </body>
+</html>

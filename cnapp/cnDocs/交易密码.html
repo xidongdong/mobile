@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <title>理财</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <link rel="stylesheet" href="../css/ratchet.min.css" />
+  <link rel="stylesheet" href="../css/hfaxCow.css" />
+  <script src="../js/demo.js"></script>
+  </head>
+  <body>
+    <a class="icon icon-left-nav pull-left" id="back"></a>
+  <div class="main">
+    <header class="bar bar-nav"><h1 class="title">设置交易密码</h1></header>
+    <div class="content">
+      <div class="pdAll">
+        <h4 id="pageTip">设置6位数字交易密码</h4>
+        <div class="password">
+          <ul id="passBox">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <p class="forgot"><b>忘记密码？</b></p>
+      </div>
+
+      <div id="text">
+        <ul id="keyBox">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+        </ul>
+        <ul id="btnBox">
+          <li></li>
+          <li>0</li>
+          <li>清除</li>
+        </ul>
+      </div>
+    </div>
+    <script>
+    setPassWord({
+      bFlag:'twice',
+      fn:function(userPass){
+        console.log(userPass);
+      }
+    });//两次
+    </script>
+  </body>
+</html>
